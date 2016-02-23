@@ -45,4 +45,9 @@ cd /mnt/s3
 ls -l
 
 
-
+su
+chmod 700 rsyncs3.sh
+----------------------
+su
+crontab -e
+0 0 * * * /path/to/rsyncs3.sh # this runs rsync to s3 every day at midnight
