@@ -14,3 +14,4 @@ rsync -avz $backup $destination
 # Once rsync finished - send email and unmount the S3 bucket from local system
 ls -lh $destination | mail -s "Rsync completed" sysadmin@system.loca
 umount $destination
+ 
